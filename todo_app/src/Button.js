@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Button = () => {
+const Button = (props) => {
   return (
-    <button clasName="ui basic button">
+    <button className="ui basic button">
       <i class="icon user" />
-        友達を追加 
+        {props.title}
     </button>
   )
 }
