@@ -1,10 +1,31 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-const InputForm = () => {
+// propsとして親からデータを受け取る
+const InputForm = ({tasklist, setTaskList}) => {
+
+  const[inputText,setInputText] = useState("")
+
+  const addSubmit = (e) => {
+    e.preventDefault()
+
+    // タスクを追加する
+    setTaskList([
+      ...tasklist,
+      {
+        text:inputText
+      }
+    ])
+    console.log(tasklist)
+  }
+
+  const addChange = (e) => {
+    setInputText(e.target.value)
+  }
+
   return (
     <div className = "inputForm">
-      <form>
-        <input type="text" />
+      <form onSubmit={addSubmit}>
+        <input type="text" onChange={addChange}/>
         <button>
           <i className="fa-solid fa-plus"></i>
         </button>
