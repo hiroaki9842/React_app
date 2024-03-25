@@ -1,0 +1,50 @@
+header{
+  /* ヘッダー背景 */
+  background-color: gray;
+
+  /* ヘッダーの大きさ */
+  height:10vh;
+  width:100vw;
+
+  /* ヘッダーデザイン */
+  display: flex;
+  justify-content: space-between;
+
+  /* ヘッダー余白 */
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+/* メインタイトル */
+.main_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 文字のデザイン */
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+
+  /* タイトルの大きさ */
+  height:100%;
+  width:300px;
+}
+
+
+/* リンクタイトル */
+.link_title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* 文字のデザイン */
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+
+  /* リンクタイトルの大きさ */
+  height:100%;
+  width:400px;
+}
