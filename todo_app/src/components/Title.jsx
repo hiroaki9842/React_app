@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Title.css';
 
 const Title = () => {
@@ -8,15 +9,15 @@ const Title = () => {
         ブログ(タイトル)
       </div>
       <div className="link_title">
-        <div>
+        <Link to="/">
           一覧
-        </div>
-        <div>
+        </Link>
+        <Link to="/post">
           新規投稿
-        </div>
-        <div>
+        </Link>
+        <Link to="/user">
           マイページ
-        </div>
+        </Link>
       </div>
     </header>
   )

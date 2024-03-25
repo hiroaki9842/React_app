@@ -41,10 +41,14 @@ header{
 
   /* 文字のデザイン */
   font-size: 20px;
-  color: #fff;
   font-weight: bold;
 
   /* リンクタイトルの大きさ */
   height:100%;
   width:400px;
+}
+
+/* リンクタイトル項目のカラー */
+.link_title,a{
+  color: #fff;
 }
