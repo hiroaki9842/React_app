@@ -1,10 +1,11 @@
 import React from 'react'
 import './Delete.css';
+import Report from './Report.jsx';
 
 const Delete = () => {
   return (
     <div className="main">
-      削除画面
+      <Report />
     </div>
   )
 }

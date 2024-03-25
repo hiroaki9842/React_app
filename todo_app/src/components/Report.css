@@ -1,0 +1,105 @@
+.report-main{
+  border:solid 1px grey;
+
+  /* 投稿フォームの大きさ */
+  height:85%;
+  width: 40%;
+
+  /* 投稿フォームの配置 */
+  position:  absolute;
+  left: 0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+
+  /* 投稿フォームの内側余白 */
+  padding: 20px;
+}
+
+/* 投稿タイトル */
+.item-title{
+  border:solid 1px black;
+
+  /* 文字デザイン */
+  font-size:30px;
+  color:black;
+  font-weight: bold;
+
+  /* 記入テキスト欄のサイズ */
+  height:10%;
+  width:100%;
+
+  /* 本文との余白 */
+  margin-bottom: 30px;
+}
+
+/* 入力欄の初期文字 */
+::placeholder{
+  font-size:15px;
+  color:#aaa;
+  font-weight: bold;
+}
+
+/* 投稿本文 */
+.item-text{
+  border:solid 1px black;
+
+  /* 文字デザイン */
+  font-size:20px;
+  color:black;
+
+  /* 本文テキストのサイズ */
+  height:60%;
+  width:100%;
+
+  /* 投稿日付との余白 */
+  margin-bottom: 50px;
+}
+
+/* 投稿日 */
+.item-day{
+  border:solid 1px green;
+
+  /* 表示文字の位置 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 投稿日テキストのサイズ */
+  height:5%;
+  width:100%;
+
+  /* ユーザー名との余白 */
+  margin-bottom: 20px;
+}
+
+/* 投稿ユーザー名 */
+.item-user{
+  border:solid 1px blueviolet;
+
+  /* 表示文字の位置 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* ユーザーテキストのサイズ */
+  height:5%;
+  width:100%;
+
+  margin-bottom: 20px;
+}
+
+/* ボタンデザイン */
+.item-button{
+  border:solid 1px lightcoral;
+
+  height:5%;
+  width:10%;
+
+  position:  absolute;
+  left: 100px;
+  right:100px;
+  bottom:0px;
+  margin:auto;
+}

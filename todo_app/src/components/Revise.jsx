@@ -1,10 +1,11 @@
 import React from 'react'
 import './Revise.css';
+import Report from './Report.jsx';
 
 const Revise = () => {
   return (
     <div className="main">
-      編集画面
+      <Report />
     </div>
   )
 }

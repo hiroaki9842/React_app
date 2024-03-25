@@ -1,10 +1,11 @@
 import React from 'react'
 import './Post.css';
+import Report from './Report.jsx';
 
 const Post = () => {
   return (
     <div className="main">
-      投稿画面
+      <Report />
     </div>
   )
 }
