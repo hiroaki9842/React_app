@@ -7,15 +7,20 @@ const InputForm = ({tasklist, setTaskList}) => {
 
   const addSubmit = (e) => {
     e.preventDefault()
+    if (inputText === "") {
+      return
+    }
 
     // タスクを追加する
     setTaskList([
       ...tasklist,
       {
-        text:inputText
+        id:tasklist.length,
+        text:inputText,
+        completed: false
       }
     ])
-    console.log(tasklist)
+    setInputText("")
   }
 
   const addChange = (e) => {
@@ -25,8 +30,8 @@ const InputForm = ({tasklist, setTaskList}) => {
   return (
     <div className = "inputForm">
       <form onSubmit={addSubmit}>
-        <input type="text" onChange={addChange}/>
-        <button>
+        <input type="text" onChange={addChange} value={inputText}/>
+        <button onClick={addSubmit}>
           <i className="fa-solid fa-plus"></i>
         </button>
       </form>
