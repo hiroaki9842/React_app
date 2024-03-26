@@ -5,6 +5,9 @@ import './Post.css';
 const User = () => {
   return (
   <div className="main">
+    <div className="title">
+      <h1>プロフィール</h1>
+    </div>
     <div className="user-main">
       <div className="user-icon">
         アイコン(仮)

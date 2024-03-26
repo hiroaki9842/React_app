@@ -20,3 +20,7 @@ body {
   /* 親要素を起点に設定/report-mainの要素 */
   position:  relative;
 }
+
+.title{
+  margin-top: 10px;
+}

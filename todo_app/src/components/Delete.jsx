@@ -5,6 +5,9 @@ import Report from './Report.jsx';
 const Delete = () => {
   return (
     <div className="main">
+      <div className="title">
+        <h1>削除</h1>
+      </div>
       <Report />
     </div>
   )
