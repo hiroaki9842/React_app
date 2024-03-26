@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './BlogList.css';
 
 const BlogList = () => {
@@ -22,12 +23,12 @@ const BlogList = () => {
           </div>
         </div>
         <div className="button">
-          <button className="edit-button" class="ui green button">
+          <Link to="/revise" className="edit-button" class="ui green button">
             編集
-          </button>
-          <button className="delete-button" class="ui grey button">
+          </Link>
+          <Link to="/delete"className="delete-button" class="ui grey button">
             削除
-          </button>
+          </Link>
         </div>
       </div>      
     </div>
