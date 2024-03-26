@@ -1,0 +1,60 @@
+.user-main{
+  border:solid 1px grey;
+
+  /* 中身全体を中央揃え */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* プロフィール全体の大きさ */
+  height:80%;
+  width: 40%;
+
+  /* プロフィール全体の配置 */
+  position:  absolute;
+  left: 0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+
+  /* プロフィール全体の内側余白 */
+  padding: 20px;
+}
+
+/* アイコン設定 */
+.user-icon{
+  border:solid 1px red;
+
+  /* アイコンの大きさ */
+  line-height: 170px;
+  width:160px;
+  border-radius:50%;
+
+/* TODO: アイコンの中身文字(仮）画像配置出来たら削除するか検討 */
+  text-align: center;
+  vertical-align: middle;
+
+
+  /* プロフィールとの余白 */
+  margin-bottom: 40px;
+}
+
+.user-profile{
+  border:solid 1px blue;
+
+  /* プロフィールの大きさ */
+  height:60%;
+  width:100%;
+
+  /* メッセージとの余白 */
+  margin-bottom: 60px;
+}
+
+.user-message{
+  border:solid 1px green;
+
+  height:10%;
+  width:100%;
+}
