@@ -1,10 +1,22 @@
+/* ブログ一覧全体 */
+.main{
+  /* 投稿記事が上から順に表示される */
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+
+  /* 要素がはみ出た場合はスクロール対応 */
+  overflow: scroll;
+}
+
 /* 各ブログ記事全体 */
 .list-main{
   border: solid 1px gray;
 
   /* リスト全体の大きさ */
-  height: 350px;
-  width: 400px;
+  height: 150px;
+  width: 1300px;
 
   /* リスト全体の外側余白 */
   margin: 30px 20px 30px 20px;
@@ -23,7 +35,7 @@
 
     /* ブログタイトル */
     .content-main .content-title{
-      border: solid 1px gray;
+      border-bottom: solid 1px gray;
 
       /* タイトル欄の大きさ */
       height: 20%;
@@ -35,7 +47,7 @@
 
     /* ブログ内容 */
     .content-main .content{
-      border: solid 1px gray;
+      border-bottom: solid 1px gray;
 
       /* 内容欄の大きさ */
       height: 75%;
@@ -46,7 +58,7 @@
   /* 日付・ユーザー名欄全体 */
     .date-user-container{
       display: flex;
-      justify-content: space-between;
+      justify-content: left;
       align-items: center;
 
       padding: 2px;
@@ -74,13 +86,11 @@
 
     /* ボタン全体 */
     .button{
+      /* ボタン全体divの高さ */
+      height: 30px;
+
       /* ボタンの配置 */
       display: flex;
-      justify-content: center;
+      justify-content: right;
       align-items: center;
     }
-
-      .main{
-        display: flex;
-        justify-content: space-around;
-      }
