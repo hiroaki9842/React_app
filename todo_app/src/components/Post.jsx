@@ -8,7 +8,7 @@ const Post = () => {
       <div className="title">
         <h1>新規投稿</h1>
       </div>
-      <Report />
+      <Report apiEndpoint="http://localhost:3001/api/posts"/>
     </div>
   )
 }

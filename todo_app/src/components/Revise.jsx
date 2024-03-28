@@ -8,7 +8,7 @@ const Revise = () => {
       <div className="title">
         <h1>編集</h1>
       </div>
-      <Report />
+      <Report apiEndpoint="http://localhost:3001/api/posts/:postId"/>
     </div>
   )
 }

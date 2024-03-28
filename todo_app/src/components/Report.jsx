@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Report.css';
 
-const Report = () => {
+const Report = ({ apiEndpoint }) => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [postDate, setPostDate] = useState('');
@@ -23,7 +23,7 @@ const Report = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3001/api/posts', {
+      const response = await fetch(apiEndpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json; charset=utf-8'
